@@ -68,9 +68,9 @@ Get_Dist_Version()
 python_test(){
 	#测速决定使用哪个源
 	tsinghua='pypi.tuna.tsinghua.edu.cn'
-	pypi='mirror-ord.pypi.io'
+	pypi='pypi.doubanio.com'
 	doubanio='pypi.doubanio.com'
-	pubyun='pypi.pubyun.com'	
+	pubyun='pypi.doubanio.com'	
 	tsinghua_PING=`ping -c 1 -w 1 $tsinghua|grep time=|awk '{print $8}'|sed "s/time=//"`
 	pypi_PING=`ping -c 1 -w 1 $pypi|grep time=|awk '{print $8}'|sed "s/time=//"`
 	doubanio_PING=`ping -c 1 -w 1 $doubanio|grep time=|awk '{print $8}'|sed "s/time=//"`
