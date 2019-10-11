@@ -83,11 +83,11 @@ python_test(){
 	if [ "$pyAddr" == "$tsinghua" ]; then
 		pyAddr='https://pypi.tuna.tsinghua.edu.cn/simple'
 	elif [ "$pyAddr" == "$pypi" ]; then
-		pyAddr='https://mirror-ord.pypi.io/simple'
+		pyAddr='https://pypi.doubanio.com/simple'
 	elif [ "$pyAddr" == "$doubanio" ]; then
 		pyAddr='http://pypi.doubanio.com/simple --trusted-host pypi.doubanio.com'
 	elif [ "$pyAddr" == "$pubyun_PING" ]; then
-		pyAddr='http://pypi.pubyun.com/simple --trusted-host pypi.pubyun.com'
+		pyAddr='http://pypi.doubanio.com/simple --trusted-host pypi.pubyun.com'
 	fi
 	rm -f ping.pl
 }
